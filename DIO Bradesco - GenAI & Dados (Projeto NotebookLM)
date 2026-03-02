@@ -1,0 +1,46 @@
+Primeiros Passos na Liberdade Financeira
+    Assunto: Orçamento, Gestão de Fluxo de Caixa e Planejamento com IA (Nível Iniciante).
+
+1. Objetivos de Estudo
+    Ao final desta leitura, você deverá ser capaz de:
+    Diferenciar entre "Necessidades" (itens básicos para viver) e "Desejos" (itens que oferecem conforto e lazer).
+    Compreender o conceito de Renda Disponível (o dinheiro que você realmente leva para casa após impostos e taxas).
+    Avaliar sua saúde financeira através do cálculo do Patrimônio Líquido (Ativos menos Passivos)
+    Utilizar ferramentas modernas, como simuladores e Inteligência Artificial, para automatizar e otimizar seu planejamento.
+
+2. Fontes Gratuítas de Estudo (Bibliografia)
+    Para aprofundar seus conhecimentos, utilize estas referências fundamentais citadas em nossos materiais:
+    A. Investopedia. What is Personal Income? Disponível em: https://www.investopedia.com/terms/p/personalincome.asp.
+    B. Consumer Financial Protection Bureau (CFPB). Checking Account Basics. Disponível em: https://files.consumerfinance.gov/f/documents/cfp_building_block_activities_checking-account-basics_guide.pdf.
+    C. NerdWallet. 50/30/20 Budget Calculator. Disponível em: https://www.nerdwallet.com/article/finance/nerdwallet-budget-calculator.
+    D. Intertwined Finance. Personal Budget Simulator. Disponível em: https://www.intertwinedfinance.com/simulations.
+
+3. Perguntas Estratégicas
+    Reflita sobre estas questões para moldar sua mentalidade financeira:
+    A. Necessidade vs. Desejo: "Eu realmente preciso de um orçamento agora e o que estou disposto a sacrificar nos 'desejos' para garantir as 'necessidades' futuras?"
+    B. Disciplina de Gestão: "Eu sou disciplinado o suficinete para seguir um orçamento flexível ou preciso de um sistema rígido (como o sistema de envelopes)?".
+    C. Meios de Pagamento: "Eu prefiro usar dinheiro tangível (que ajuda a gastar menos) ou ferramentas digitais e mobile pela conveniência?"
+    D. Proteção de Risco: "Considerando meu perfil, vale apena pagar um prêmio mensal maior por uma cobertura de seguro total ou assumir o risco com uma cobertura básica?".
+
+4. Tipos de Prompts para IA e suas Variações
+    Use estes comandos em IAs (Como o ChatGPT) para obter consultoria personalizada:
+    A. Prompt de Persona (Atuar como Especialista)
+    - Variação (Analista de Orçamento): "Atue como um analista de orçamento. Vou fornecer minhas transações do mês passado: [Inserir Transações]. Por favor, categorize-as, identifique os 3 maiores gastos e sugira 3 formas de economizar sem mudar drasticamente meu estilo de vida".
+    - Variação (Conselheiro de Crédito): "Atue como um conselheiro de crédito certificado. Meu score atual é [Score]. Tenho dívidas em [Dívidasem portgu]. Crie um plano de ação prioritário para aumentar minha pontuação".
+    B. Prompt Educacional (Explicar Conceitos)
+    - Variação: "Explique o conceito de juros compostos para alguém de 15 anos usando uma história ou analogia. Depois, crie uma tabela mostrando o crescimento de um investimento de $10.000 com aportes de $500 mensais a 7% ao ano em 10, 20 e 30 anos".
+    C. Prompt de Análise Comparativa
+    - Variação: "Atue como coach de carreira. Compare estas duas ofertas ded emprego: Oferta A [Salário e Benefícios] vs Oferta B [Salário e Benefícios]. Considere impostos e bônus para estimar o impacto financeiro total".
+
+5. Glossário de Conceitos Básicos
+    - APR (Taxa Anual Equivalente): O custo real de tomar dinheiro emprestado por um ano, incluindo juros e taxas.
+    - Juros Compostos: Juros calculados sobre o valor principal e também sobre os juros acumulados de períodos anteriores ("juros sobre juros").
+    - Patrimônio Líquido (Net Worth): O valor total de tudo o que você possui (ativos) menos tudo o que você deve (passivos).
+    - PMI (Seguro Hipotecário Privado): Uma taxa mensal paga ao credor quando a entrada de uma casa é menor que 20%, protegendo o banco contra inadimplência.
+    - Renda Disponível: O dinheiro que resta após o pagamento de todos os impostos e encargos legais.
+
+6. Conjunto de Prompts Reutilizáveis para Futuros Projetos
+    A. Check-up Financeiro Completo: "Atue como um consultor financeiro fiduciário. Analise minha saúde financeira com estes dados: Idade [X], Renda Líquida: [Y], Gastos: [Z], Dívidas: [Lista], Meta: [Meta]. Forneça um relatório com nota de A a F e 3 recomendações".
+    B. Estratégia de Dívidas: "Tenho as seguintes dívidas: [Lista]. Explique os métodos 'bola de neve' e 'avalanche' e crie um plano de pagamento comparativo passo a passo".
+    C. Simulador de Investimento: "Atue como um professor de investimentos. Sou iniciante com perfil de risco [Baixo/Médio/Alto]. Explique a diferença entre ações e ETFs e surgira uma alocação de carteira em porcentagens".
+

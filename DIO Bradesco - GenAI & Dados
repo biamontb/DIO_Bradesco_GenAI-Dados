@@ -1,0 +1,640 @@
+DIO Bradesco - GenAI & Dados
+
+ORIGEM DA IA
+    A Inteligência Artificial (IA) nasceu como uma área de pesquisa científica a partir do desejo de entender se máquinas poderiam pensar e agir como seres humanos.
+    Alan Turing (1950) propôs o Teste de Turing, que avalia se uma máquina consegue se passar por um humano numa conversa.
+    A IA surgiu oficialmente na Conferência de Dartmouth (EUA, 1956), organizada por John McCarthy, Marvin Minsky, Claude Shannon. Foi ali que o termo “Artificial Intelligence” foi usado pela primeira vez.
+    Os primeiros sistemas de IA (anos 50-70) eram baseados em regras lógicas, como resolver problemas matemáticos, jogar xadrez e provar teoremas. Um exemplo famoso disso é a ELIZA (1966), que foi um dos primeiros chatbots, que simulava um psicólogo. Esses sistemas não aprendiam sozinhos e funcionavam apenas em ambientes muito controlados.
+    Houve o período AI Winters, onde houve o período em que as expectativas eram altas mas a tecnologia não conseguia  entregar, resultando em cortes de investimento e pouco avanço prático.
+    O renascimento com dados e Machine Learning (anos 90–2000) aconteceu por surgir computadores mais rápidos, com grandes volumes de dados (a internet) e novos algoritmos de aprendizado. Um exemplo marcante dessa época é o Deep Blue (IBM), que derrotou o campeão mundial de xadrez em 1997.
+    A era moderna surgiu a partir de 2010 com o Deep Learning e IA Generativa, por possuir Redes neurais profundas (Deep Learning), reconhecimento de imagem, voz e texto, e recentemente a IA Generativa. Exemplos atuais são o ChatGPT (gera texto), DALL-E (gera imagens), Copilot (ajuda a programar). Atualmente a IA aprende padrões complexos, cria conteúdo novo e interage em linguagem natural.
+
+    Resumo da linha do tempo:
+    1950 - Turing propõe máquinas pensantes
+    1956 - Termo “IA” nasce em Dartmouth
+    60-70 - IA baseada em regras
+    80-90 - Invernos da IA
+    1997 - Deep Blue vence humano
+    2010+ - Deep Learning
+    2020+ - IA Generativa
+
+    Ou seja, a IA nasceu da junção de três coisas: Curiosidade humana sobre inteligência, Matemática e lógica e Evolução dos computadores. E evoluiu de: “máquinas que seguem regras” para: “máquinas que aprendem e criam”.
+
+COMO UMA INTELIGÊNCIA ARTIFICAL É TREINADA?
+    A IA precisa de muitos dados, como textos, imagens, áudios, números (planilhas, registros, etc.). Esses dados são chamados de conjunto de treinamento (dataset). Pois sem dados, não existe IA.
+    Depois, escolhe-se um modelo matemático, por exemplo: Regressão, Árvores de decisão e Redes neurais. Esse modelo é como um cérebro vazio, que ainda não sabe nada.
+    Há o processo de treinamento (aprendizado), que em cada passo faz uma previsão, compara com a resposta correta, calcula o erro e ajusta seus parâmetros. Isso se chama otimização (normalmente com gradiente descendente). Ou seja, erra, aprende, tenta de novo e melhora.
+    Os tipos de treinamentos são:
+    1. Aprendizado Supervisionado: Tem respostas certas.
+    2. Não Supervisionado: Não tem rótulos, a IA descobre padrões.
+    3. Por Reforço: Aprende com recompensas e punições.
+    5. Validação e teste: Depois do treino, Testa-se a IA com dados novos, verifica-se se ela realmente aprendeu, evita-se o overfitting (decorar em vez de aprender).
+    6. Ajustes e re-treinamento: com o tempo, Novos dados surgem, o mundo muda e a IA precisa ser re-treinada.
+
+EXEMPLO DE TREINAMENTO DE IA
+   Ensinando uma IA a reconhecer spam:
+1. Mostra milhares de e-mails
+2. Marca: "spam" ou "normal"
+3. Ela aprende padrões de palavras
+4. Começa a classificar sozinha
+
+COMO MODELOS COMO O CHATGPT SÃO TREINADOS (EM ALTO NÍVEL)
+1. Treinados com bilhões de textos
+2. Aprendem padrões da linguagem
+3. Depois passam por ajuste humano (feedback)
+4. Aprendem a responder de forma útil e segura.
+
+O QUE SÃO LLMs?
+    LLMs (Large Language Models) são um tipo de Inteligência Artifical focado em entender e gerar linguagem humana (texto).
+    LLMs é ua IA que lê quantidades gigantescas de texto, aprende padrões da língua, consegue prever a próxima palavra, e com isso consegue responder perguntas, escrever textos, traduzir idiomas, resumir conteúdos e ajudar a programar.
+   Uma visão conceitual do LLMs seria:
+1. O texto é convertido em números (tokens)
+2. O modelo analisa o contexto
+3. Calcula probabilidades
+4. Gera a próxima palavra mais provável
+5. Repete isso muitas vezes
+    Ele não "entende" como humano, mas modela estatisticamente a linguagem. Os exemplos de LLMs famosos são o GPT/OpenAI (ChatGPT), Gemini (Google), LLaMA (Meta), Claude (Anthropic) e Mistral.
+
+O QUE DIFERENCIA LLM DE UM CHATBOT COMUM?
+    Um chatbot antigo seguia regras fixas, Respostas pré-programadas, enquanto um LLM aprende com dados reais, cria respostas novas e generaliza para situações inéditas.
+
+LIMITAÇÕES DOS LLMs
+    Mesmo sendo poderosos, eles podem errar com confiança, inventar fatos, não possuem consciência e não entendem o mundo, apenas os padrões de texto.
+
+O QUE É DEEP LEARNING?
+    Deep Learning é chamado de "profundo" por usar muitas camadas de neurônios artificiais. Essas camadas aprendem sozinhas a extrair características dos dados. Por exemplo, para reconhecer um rosto, é necessário que a camada 1 detecta bordas, a camada 2 detecta olhos e boca e a camada 3 reconhece o rosto inteiro. Tudo isso sem programação manual das regras.
+
+COMO FUNCIONA DEEP LEARNING?
+    1. Entrada de dados: Pode ser imagem, texto, som ou números.
+    2. Rede neural: a rede é formada por neurônios artificiais, pesos (valores), funções matemáticas. Cada neurônio: recebe números, faz um cálculo, passa para o próximo.
+    3. Previsão: a rede gera uma reposta "Isso é um cachorro", "Esse texto é positivo".
+    4. Cálculo do erro: Compara com a resposta certa.
+    5. Ajuste dos pesos (Backpropagation): O erro é usado para corrigir os pesos e melhorar a próxima previsão. Esse processo se repete milhões de vezes.
+
+POR QUE DEEP LEARNING É EFICIENTE?
+    Porque ele aprende padrões muito complexos, funciona com dados não estruturados, escala bem com grandes volumes. Por exemplo, na aplicação Google Fotos, o Deep Learning reconhece as pessoas, na aplicação Spotify o Deep Learning recomenda músicas, na aplicação ChatGPT, O Deep Learning gera textos, etc.
+
+DIFERENÇA ENTRE ML TRADICIONAL E DEEP LEARNING
+    Enquanto o ML (Machine Learning) tradicional possui regras manuais, poucas camadas, precisa de menos dados e possui menos precisão, o Deep Learning aprende sozinho, possui muitas camadas, precisa de muitos dados e é muito mais preciso.
+
+LIMITAÇÕES DO DEEP LEARNING
+    Apesar da eficência do Deep Learning, ele precisa de muitos dados, muito poder computacional, pode reproduzir vieses (distorções sistemáticas que podem levar a conclusões desproporcionais) e pode ser considerado "caixa preta".
+
+RESUMO SOBRE O DEEP LEARNING
+    Deep Learning é uma técnica de IA que usa redes neurais profundas para aprender automaticamente padrões complexos em grandes volumes de dados. É como ensinar uma máquina a pensar em níveis, do simples ao complexo, sem dizer como fazer.
+
+A ERA DAS IAS GENERATIVAS
+    IAs generativas são modelos de IA capazes de gerar conteúdo original, seja texto, imagens, áudio, código, etc. Eles aprendem padrões dos dados e criam algo novo baseado nesses padrões.
+    Essa era é considerada revolucionário devido a IA ser sido capaz de apenas classificar, recomendar e prever, e atualmente ser capaz de escrever, desenhar, falar, programar e criar.
+
+O QUE TORNOU A ERA DAS IAS GENERATIVAS POSSÍVEL?
+    1. Big Data: Volumes gigantescos de dados (internet inteira)
+    2. Deep Learning: Redes neurais profundas capazes de aprender padrões complexos.
+    3. Hardware poderoso: GPUs e TPUs para treinar modelos gigantes.
+
+PRINCIPAIS TECNOLOGIAS POR TRÁS
+    A tecnologia transformers possui a função da Arquitetura dos LLMs, a tecnologia LLMs possui a função de Modelos de linguagem, a tecnologia Diffusion Models possui a função de geração de imagens, a tecnologia Multimodalidade possui a função de texto, imagem e áudio juntos.
+
+IMPACTOS REAIS NO MUNDO
+    Profissões: Programadores mais produtivos, designers com IA como ferramenta, professores com tutores virtuais, professores com tutores virtuais, atendimento automatizado.
+    Empresas: Criação de conteúdo em massa, análise de dados instantânea, prototipagem rápida, redução e custos.
+    Pessoas: Aprender mais rápido, criar sem saber programar, acessar conhecimento global.
+
+DESAFIOS E RISCOS
+    Apesar do poder, teremos fake news realistas, deepfakes, direitos autorais, dependência excessiva, vieses algorítmicos
+
+O QUE MUDA DE VERDADE?
+    A mudança mais profunda é que pela primeira vez, humanos não são os únicos capazes de criar conteúdo intelectual. Isso consequentemente muda a educação, trabalho, arte, economia e comunicação.
+
+QUAIS SÃO AS CARACTERÍSICAS DO LLMS?
+    As principais características dos LLMs (Large Language Models) são: são treinados com volumes massivos de dados, usam redes neurais profundas, especialmente a arquitetura Transformer, funcionam prevendo a próxima palavra (token) com base no contexto, um único modelo faz muitas tarefas como responder perguntas, traduzir, resumir, escrever textos e gerar código. Consideram o histórico da conversa para gerar respostas coerentes, entendem e geram diversos idiomas, quanto maiores os dados e o modelo, melhor o desempenho. Produzem textos fluentes parecidos com humanos, conseguem resolver problemas novos, não vistos no treino, suas limitações são a possibilidade de inventar informações, não tem consciência, podem reproduzir vieses (distorções sistemáticas que podem levar a conclusões desproporcionais) e dependem da qualidade dos dados. Em resumo, LLMs são modelos gigantes de Deep Learning que aprendem linguagem prevendo tokens e conseguem executar múltiplas tarefas em linguagem natural.
+
+DESAFIOS NO DESENVOLVIMENTO DE LLMS
+    Os Desafios no Desenvolvimento de LLMs (Large Language Models) envolvem tanto questões técnicas quanto sociais, éticas e econômicas. Eles explicam por que criar e manter esses modelos é caro, complexo e delicado.
+    1. Volume e qualidade dos dados: LLMs precisam de bilhões de textos, dados diversos e confiáveis. Seus desafios são dados com erro ou viés, conteúdo desatualizado, direitos autorais, pois se os dados são ruins, o modelo aprende errado.
+    2. Alto custo computacional: Treinar um LLM exige milhares de GPUs, semanas ou meses de processamento e milhões de dólares. Seus desafios são o consumo de energia, custo financeiro altíssimo e o impacto ambiental.
+    3. Alucinações: LLMs podem inventar fatos, responder com confiança mesmo errando, pois eles preveem textos ao em vez de verificar a verdade.
+    4. Vieses e Discriminação: Devido aos LLMs aprenderem com dados humanos, podem reproduzir preconceitos, estereótipos e desigualdades sociais.
+    5. Falta de interpretabilidade (Caixa-preta): É difícil explicar o motivo do modelo responder algo e como chegou naquela conclusão.
+    6. Segurança e uso indevido: Produz riscos de geração de fake news, deepfakes, golpes automatizados e código malicioso.
+    7. Atualização do conhecimento: Após o treino o mundo muda, novas informações surgem, o modelo fica desatualizado, e re-treinar é caro.
+    8. Dependência de infraestrutura: LLMs precisam de servidores potentes, internet, manutenção constante. Fazendo com que não seja acessível para todos.
+    9. Escalabilidade e latência: Quanto maior o modelo, mais lento pode ser, maior custo para atender milhões de usuários.
+    10. Questões éticas e legais: Incluem privacidade de dados, uso de conteúdo protegido, responsabilidade por erros, impacto no mercado de trabalho.
+
+COMO SUPERAR LIMITAÇÕES TÉCNICAS EM LLMS?
+    1. RAG (Retrieval-Augmented Generation): Conectar o LLM a uma base externa de dados atualizada. O modelo busca informações reais, depois gera a resposta. Resolve alucinações e conhecimento desatualizado.
+    2. Fine-tuning (ajuste fino): Treinar o modelo com dados específicos do seu domínio. Por exemplo, domínio jurídico, médico, financeiro, etc. Resolve respostas genéricas e baixa precisão em áreas específicas.
+    3. Prompt Engineering: Escrever bons prompts requere mais contexto, exemplos e instruções claras, pois resolve respostas vagas e comportamento inesperado.
+    4. Chain of Thought / Reasoning: Forçar o modelo a explicar o raciocínio e dividir problemas em etapas, pois resolve erros em lógica e problemas complexos.
+    5. Modelos menores e especializados: Modelos menores, focados em tarefas específicas resolve alto custo, latência e custo de energia.
+    7. Ensemble de modelos: Combinar vários modelos, um gera, outro valida, outro corrige, resolve erros críticos e baixa confiabilidade.
+    8. Avaliação contínua: Monitorar qualidade das respostas, taxas de erro e feedback dos usuários resolve degradação do modelo ao longo do tempo.
+    9. Atualização de contexto: Fornecer ao modelo dados recentes, documentos da empresa e histórico correto resolve respostas fora da realidade.
+    10. Human-in-the-loop: Manter humanos no processo de revisão, aprovação e correção resolve decisões erradas em áreas críticas.
+    Em resumo:
+    RAG - Resolve alucinações
+    Fine-tuning - Resolve baixa especialização
+    Prompt Engineering - Resolve respostas ruins
+    Guardrails - Resolve riscos
+    Modelos menores - Resolve alto custo
+    Human-in-the-loop - Resolve erros graves
+    Ou seja, superar limitações dos LLMs exige combinar engenharia de dados, boas instruções, validação externa e supervisão humana.
+
+EXEMPLOS E APLICAÇÕES DE LLMS
+    1. Atendimento ao cliente: chatbots inteligentes que respondem dúvidas, resolvem problemas, funcionam 24/7, como bancos, e-commerce, operadoras, etc.
+    2. Educação: Tutoria personalizada, explicam conteúdos, criam exercícios, corrigem respostas e adaptam nível do aluno.
+    3. 3. Programação: Assistentes de código sugerem funções, explicam erros, geram testes e documentam sistemas, como o GitHub Copilot e ChatGPT
+    4. Criação de conteúdo: Produção automática de textos, 
+roteiros, posts, e-mails, anúncios.
+    5. Tradução e idiomas: Tradução rápida, contextual e mais natural.
+    6. Saúde: Apoio a médicos, resumo de prontuários, triagem, apoio a diagnóstico sem substituir médico.
+    7. Jurídico: Análise de contratos, resumo de leis, busca de jurisprudência.
+	8. Marketing e vendas: geração de campanhas, análise de feedback e personalização de mensagens.
+	9. Recursos Humanos: Triagem de currículos, criação de descrições de vagas, chatbots internos
+	10. Pesquisa e análise: resumo de artigos, extração de insights, apoio à tomada de decisão
+
+COMO IMPLEMENTAR APLICAÇÕES DE LLMS EM E-COMMERCE?
+
+	1. Uso mais comum: atendimento ao cliente (Chatbot para dúvidas de produtos, Rastreamento de pedidos, Trocas e devoluções), Busca inteligente (Busca por linguagem natural), Recomendação personalizada (Sugestão de produtos baseada em perfil e histórico), Geração de conteúdo (Descrição de produtos, Respostas automáticas em reviews, E-mails marketing), Pós-venda (Suporte técnico, Cross-sell e upsell automáticos).
+
+	2. Arquitetura típica (A mais usada no mercado): Usuário para interface (site/app/whatsapp) para backend para LLM (API) para RAG (base de dados da loja). O modelo consulta estoque, pedidos, catálogo e políticas de empresa.
+
+	3. Passo a passo de implementação:
+	A. Escolher o modelo (como OpenAI, Claude, Gemini, etc)
+	B. Criar a base de conhecimento RAG (indexar catálogo de produtos, políticas, FAQ e histórico de pedidos)
+	C. Definir prompts (Por exemplo, “Você é um atendente da loja X. Responda apenas com base nos dados fornecidos.”)
+	D. Integrar via API (usar backend como Node.js, Python, Java, entre outros)
+	E. Criar interface (chat no site, whatsapp bot, app mobile, etc)
+	F. Monitorar e ajustar (Logs, Feedback e Taxa de Resolução)
+
+	4. Tecnologias mais usadas:
+LLM - GPT, Claude, Gemini
+RAG - Pinecone, Weaviate, FAISS
+Backend - Node.js, Python
+Frontend - React, Vue
+Mensageria - WhatsApp API
+Cloud - AWS, GCP, Azure
+
+	5. Boas práticas (O que realmente funciona)
+	A. Nunca confiar só no LLM, sempre validar respostas e buscar dados reais
+	B. Human-in-the-loop: Para reclamações, casos críticos e erros de pagamento.
+	C. Logs e métricas: medir tempo de resposta, satisfação e conversão.
+
+	6. Ganhos reais para o negócio: área de atendimento com benefício em redução de custos, área de vendas com benefício de aumento de conversão, área de marketing com conteúdo em escala, área de operação em benefício de menos tickets e área de cliente em benefício de melhor experiência.
+
+	7. Riscos e cuidados: não expor dados sensíveis, não permitir decisões financeiras sem validação, proteger contra alucinações e seguir LGPD (Lei Geral de Proteção de Dados).
+
+	Em conclusão, Implementar LLMs em e-commerce é integrar IA ao atendimento, busca e recomendação, sempre conectando o modelo a dados reais da loja, pois sem dados da loja, chatbot não consegue funcionar apropriadamente.
+
+ANALISANDO O IMPACTO DOS LLMS NA SOCIEDADE
+    1. Impacto no trabalho:
+    Automação intelectual: LLMs automatizam tarefas que antes eram só humanas, como redação de textos, análise de dados, atendimento ao cliente, programação, entre outros. Resultando em aumento de produtividade, mudança de profissões e surgimento de novas carreiras (prompt engineer, AI trainer)
+    2. Impacto na educação:
+    Aprendizado personalizado: cada pessoa pode ter um tutor virtual para explicações sob medida, exercícios personalizados e aprendizado 24/7. Os desafios serão dependência excessiva, plágio e a avaliação tradicional perde sentido.
+    3. Impacto na comunicação:
+    Tradução instantânea entre idiomas, comunicação global facilitada, acesso à informação sem barreiras.
+    4. Impacto na criatividade:
+    IA como parceira criativa, faz com que escritores usem IA para rascunhos, designers pegam ideias, e músicos buscam referências para composições.
+    5. Impacto econômico:
+    Redução de custos operacionais, novos modelos de negócio, democratização de ferramentas antes caras, mas também possui risco de desemprego em áreas repetitivas, concentração de poder em grandes empresas de tecnologia.
+    6. Impacto ético e social:
+    Riscos de fake news, deepfakes, manipulação de opinião, perda de privacidade, com desafios de regulação, transparência e responsabilidade por decisões.
+    7. Impacto psicológico:
+    Pessoas conversando mais com IA do que humanos, dependência emocional, confiança excessiva nas respostas.
+    8. Impacto no acesso ao conhecimento, LLMs democratizam aprendizado técnico, idiomas, programação e pesquisa.
+
+PORQUE APRENDER ENGENHARIA DE PROMPTS?
+    Aprender Engenharia de Prompts é essencial porque é a habilidade que permite extrair o máximo potencial dos LLMs (como ChatGPT, Gemini, Claude).
+    Engenharia de Prompts é a técnica de escrever instruções claras, bem estruturadas e estratégicas para a IA gerar respostas melhores. Um exemplo de prompt ruim seria "Explique IA", um exemplo de prompt bom é "Explique IA para um estudante iniciante, usando exemplos práticos e linguagem simples".
+    É importante aprender engenharia de prompts pois gera respostas mais precisas, reduz ambiguidades e respostas genéricas, melhora a qualidade de saída, limitam escopos, pedem fontes, é uma das skills mais valorizadas dentro do marketing, não exige programação e permite criar produtos, ou seja, economiza tempo, aumenta a qualidade e toma decisões melhores.
+
+O QUE VOCÊ PRECISA PRA COMEÇAR A APRENDER ENGENHARIA DE PROMPTS?
+    1. Acesso a um LLM, ou seja, usar alguma IA como ChatGPT, Gemini, Claude ou Copilot.
+    2. Possuir clareza de objetivo, ou seja, saber o que você quer, para quem e em qual formato.
+    3. Desenvolver noções básicas de IA, como entender o que é LLM, suas limitações e como a IA gera texto.
+    4. Entender como funciona estrutura de prompt, através dos elementos contexto (quem é a IA), tarefa (o que ela deve fazer), formato (como responder) e restrições (limites e regras)
+    5. Mentalidade de teste e erro, com ele você aprende testando, ajustando e refinando prompts.
+    6. Exemplos para mostrar o que você quer especificamente.
+    7. Pensamento crítico através de perguntas "isso faz sentido?", "está correto", "preciso validar?", entre outros.
+    8. Curiosidade e prática constante, pois a principal ferramenta é praticar todo dia com casos reais.
+
+COMO OS MODELOS DE LINGUAGEM "ENTENDEM" UM PROMPT?
+    1. Tudo vira números (tokens): Quando você escreve um prompt, o modelo converte isso em números (tokens), por exemplo:
+    explique -> 10542
+    IA -> 234
+    simples 0> 8901
+
+    2. Análise de contexto: o modelo observa todas as palavras, a ordem e o histórico da conversa, pois ele calcula qual palavra tem mais chance de vir depois.
+    3. Probabilidade, não consciência: O modelo não sabe o que é IA, não tem intenção e nem entendimento real, ela apenas tenta prever a resposta ou resolução.
+    4. Atenção (Attention): A arquitetura Transformet usa mecanismo de Atenção, pois ele aprende quais palavras são mais importantes e como elas se relacionam, por exemplo: "explique IA para uma criança", ele dá mais pesa para as palavras-chaves "explique" e "criança".
+    5. Geração passo a passo: o texto é gerado através da sequência de prever a próxima palavra, acrescentar ao texto e repetir o processo até formar a resposta completa.
+    6. Por que parece que ele entende?: Porque ele foi treinado com multidata (bilhões de textos), exemplos humanos e padrões de linguagem, dando capacidade a IA refletir a forma que os humanos explicam as coisas.
+
+COMO OS MODELOS DE LINGUAGEM "LEMBRAM" DO QUE FOI DITO?
+    A memória dos modelos de linguagem são formadas por um contexto matemático.
+    1. Memória = Janela de contexto: tudo o que o modelo lembra é o texto que está dentro da janela de contexto, incluindo sua mensagem atual, mensagens anteriores e instruções do sistema, ao sair dessa janela, o modelo esquece completamente.
+    2. Como isso funciona por dentro: Cada palavra vira um tóken, o modelo processa todos os tokens juntos a cada resposta, ele não guarda estados internos como "variável global" ou "banco de memória", ele apenas recalcula tudo do zero, usando o texto disponível.
+    3. Atenção (attention): O mecanismo de atenção permite dar mais peso a partes importantes do histórico e relaciona o que foi dito antes com o agora. Por exemplo, "Meu nome é João" e "Qual seu nome", o modelo encontra "João" no contexto e responde.
+    4. Por que às vezes ele "esquece"?: Porque a conversa ficou longa, partes antigas saíram da janela ou não eram relevantes, resultando a não ter mais acesso à informação.
+    5. Diferença entre memória real e contexto: enquanto a memória humana guarda experiências e aprende com o tempo, a LLM não guarda nada, só possui memórias durante o treino e só lembra do que está no prompt.
+    6. Como sistemas resolvem isso na prática: aplicações reais usam RAG (memória externa) com banco de dados, histórico salvo e documentos, a cada pergunta recupera dados e injeta no prompt. Assim o LLM aparenta ter memória.
+    Por resumo, modelos de linguagem “lembram” apenas do texto presente na janela de contexto, não possuem memória permanente.
+
+QUAIS SÃO OS ELEMENTOS ESSENCIAIS DE UM BOM PROMPT?
+    1. Contexto (O que é IA?): Defina o papel do modelo, por exemplo, "Você é um professor de programação..."
+    2. Objetivo/Tarefa (O que fazer?): Diga exatamente o que você quer, por exemplo, "Explique o conceito de funções em JavaScript..."
+    3. Público-alvo (para quem?): adapte o nível da resposta, por exemplo, "Para um iniciante, usando linguagem simples".
+    4. Formato da resposta (como responder?): Especifique a estrutura, por exemplo, "Em tópicos, com exemplos".
+    5. Restrições/Regras: Defina limites e condições, por exemplo, "Sem usar termos técnicos" ou "Em no máximo 5 linhas".
+    6. Exemplos (few-show): Mostre modelos de resposta, por exemplo, "Exemplo de resposta esperada: ..."
+    7. Tom e estilo: defina a personalidade, por exemplo, "Tom informal e motivador"
+    8. Contexto adicional (dados): forneça informações reais, por exemplo: "considere apenas este texto: ..."
+    Estrutura clássica de um prompt: papel, tarefa, público, formato e regras.
+
+ENGENHARIA DE PROMPTS NO DIA A DIA
+    1. Estudos e aprendizado: pedir explicações personalizadas, criar resumos, gerar exercícios, simular provas.
+    2. Trabalho: escrita de e-mails profissionais, relatórios, apresentações com planejamento de cronogramas, roadmaps e brainstorms.
+    3. Programação: explicar erros, gerar código base, documentar funções
+    4. Marketing e conteúdo: posts para redes sociais, roteiros de vídeo e copy de vendas
+    5. Organização pessoal: planejamento semanal, lista de tarefas e definição de metas
+    6. Comunicação: mensagens difíceis, feedback, negociação.
+
+CUIDADOS NA APLICAÇÃO DED PROMPTS
+    1. Não confiar cegamente: LLMs poem errar, inventar informações e soar confiantes mesmo estando errados.
+    2. Não expor dados sensíveis: nunca inclua CPF, senhas, dados bancários, informações privadas de clientes, segredos da empresa, etc.
+    3. Evitar prompts vagos: prompts genéricos geram respostas genéricas e baixa precisão.
+    4. Cuidado com decisões críticas: não use IA sozinha para diagnósticos médicos, decisões jurídicas ou decisões financeiras. Use como apoio, não como autoridade final.
+    5. Verificar viés e tom: a IA pode reproduzir esteriótipos, preconceitos e linguagem inadequada.
+    6. Não automatizar tudo sem controle: evite publicar respostas sem revisõa, enviar mensagens automáticas em massa sem teste.
+    7. Cuidado com direitos autorais: a IA pode gerar conteúdo parecido com textos existentes, use como inspiração, rascunho, mas não como cópia final.
+    8. Testar e iterar: Sempre refine prompts, teste com casos diferentes e compare resultados.
+    9. Definir limites claros: Inclue regras no prompt, como "Se não soubes, diga que não sabe".
+    10. Manter pensamento crítico: A maior proteção é não desligar o cérebro só porque a resposta veio da IA.
+
+O QUE É UM PROMPT
+    Um prompt é a instrução, pergunta ou comando que você dá pra a IA, é a mensagem de entrada que orienta o que o modelo deve fazer, por exemplo, "Explique o que é IA" ou "Resuma este texto em 5 linhas".
+
+A IMPORTÂNCIA DE UM PROMPT
+    Ele é importante pois a IA não será capaz de saber o que você deseja se não disser claramente. Enquanto um prompt ruim gera respostas vagas, fora de contexto e de baixa qualidade, um bom prompt gera respostas úteis, precisas e no formato certo.
+
+COMPONENTES DE UM PROMPT
+    Instrução: Orientam o modelo sobre a tarefa a ser realizada, especificando o que fazer, como "Resuma o texto abaixo em três frases objetivas".
+    Exemplos (Few-show Learning): Apresentam pares de entrada e saída esperados, mostrando ao modelo o comportamento ou formato ideal para a tarefa definida.
+    Contexto ou Configuração: Define o papel do modelo e o cenário, como "Você é um assistente de IA que simplifica explicações técnicaspara iniciantes em tecnologia"
+    Restrições ou Limitações: Limita a resposta em termos de extensão ou escopo, como "Responda em até 50 palavras, sem incluir opinições ou dados fictícios".
+    Conteúdo Principal: Texto central para processamento, como um parágrafo, tabela ou documento, que o modelo deve analisar, traduzir ou resumir.
+    Indicações: Guiam o modelo para gerar saídas específicas, usando estímulos como "Liste pontos principais" ou "Responda como um parágrafo único"
+    Formato de Saída: Especifica a forma da resposta como "Apresente no formato JSON" ou "Liste os resultados como uma sequência de tópicos claros".
+    Conteúdo de Suporte: Dados extras que ajudam a tarefa como datas ou preferências, por exemplo, "Use o contexto atual de dezembro de 2024 nas respostas".
+
+TÉCNICAS ENGENHARIA DE PROMPT
+    Instruções claras: Técnica que organiza o prompt para que as orientações sejam objetivas, detalhadas e colocadas no início para maior clareza.
+    Preparar a saída: Define palavras ou frases no final do prompt que ajudam a moldar o formato da resposta, tornando-a mais estruturada e clara.
+    Solicitação e cadeia de pensamento: Instrução para que o modelo responda passo a passo, explicando o raciocínio até chegar à conclusão final.
+    Especificar estrutura de saída: Indica o formato exato da resposta, como JSON ou listas, ajudando a obter resultados organizados e úteis.
+    Repetir instruções no final: Reforça as orientações no final do prompt para garantir que o modelo compreenda e siga a tarefa proposta sem desvios.
+    Dividir a tarefa: Quebra uma tarefa complexa em várias etapas menores, facilitando para o modelo responder de forma lógica e organizada.
+    Adicionar sintaxe clara: Organiza o prompt com formatações como listas, títulos ou tabelas, tornando as instruções mais visuais e compreensíveis.
+    GuardRails: Técnicas para limitar respostas, evitando conteúdos prejudiciais, irrelevantes ou incorretos, alinhando o modelo a padrões éticos.
+
+IAS
+    Geração de imagens (Big, Leonardo AI, Midjourney).
+    Voz e Avatares Virtuais (ElevenLabs, D-ID, Heygen).
+
+PROJETO: NOTEBOOKLM
+    . Reunir de 3-5 fontes (abertas em texto ou pdf) sobre um assunto financeiro introdutório)
+    . Definir objetivos de estudo
+    . Elaborar perguntas estratégicas e testadas variações de prompts, registrando as respostas e suas referências
+    . O resultado esperado é um miniguia de estudo com resumos estruturados, glossário de conceitos e um conjunto de prompts reutilizáveis que apoiem futuras revisões.
+
+
+
+
+
+
+INTRODUÇÃO AO EXCEL 365
+    O Microsoft Excel 365 é um software de planilhas usado para organizar dados, fazer cálculos automáticos, criar gráficos e relatórios, além de analisar informações.
+
+PRINCIPAIS CONCEITOS DE EXCEL 365
+    1. Pasta de Trabalho (Workbook): É o arquivo do Excel, por exemplo, controle_financeiro.xlsx
+    2. Planilha (Worksheet): É cada aba dentro do arquivo, por exemplo, Janeiro, Fevereiro, Março, etc.
+    3. Célula: É cada "quadradinho" da planilha, por exemplo, A1, B3, C10.
+    4. Colunas e Linhas: Colunas são letras e Linhas são números.
+
+TIPOS DE DADOS NO EXCEL 365
+    Os tipos de dados que podemos colocar nas células são: Texto (Nome, produto, cidade), Números (10, 5.5, 1000), Datas (24/01/2026) e Fórmulas (=A1+B1)
+
+FÓRMULAS BÁSICAS NO EXCEL 365
+    Função =SOMA(A1:A10) -> Soma valores
+    Função =MÉDIA(A1:A10) -> Média
+    Função =MÁXIMO(A1:A10) -> Maior valor
+    Função =MÍNIMO(A1:A10) -> Menor valor
+    Função =SE(A1>7;"Aprovado";"Reprovado") -> Condicional
+
+RECURSOS IMPORTANTES DO EXCEL 365
+    1. AutoFill: Arraste o canto da célula para copiar fórmulas automaticamente.
+    2. Filtros: Permitem filtrar dados por Nome, Data e Valor.
+    3. Tabelas: Transforma dados em estrutura inteligente de Ctrl + T
+    4. Gráficos: Colunas, Linhas, Pizza, Barras
+
+VANTAGENS DO EXCEL 365
+    Funciona online e offline, Salva na nuvem (OneDrive), Colaboração em tempo real, Atualizações automáticas.
+
+EXEMPLOS DE USO REAL DO EXCEL 365
+    Controle financeiro, Lista de alunos, Planilha de vendas, Controle de estoque, Cronogramas.
+
+ATALHOS ÚTEIS DO EXCEL 365
+    Ctrl + C / V -> Copiar / Colar
+    Ctrl + Z -> Desfazer
+    Ctrl + T -> Criar tabela
+    Ctrl + ; -> Data atual
+    Alt + = -> Soma automática
+
+O QUE É UM ANALISTA DE MIS?
+    Analista de MIS (Management Information Systems) é o profissional responsável por coletar, organizar, analisar e transformar dados em informações úteis para a tomada de decisão da empresa. Palavras-chaves: Criação de relatórios, relatórios gerenciais, desenvolvimento de relatórios, elaboração de relatórios e SQL Server. Um bom Analista de MIS é Analítico, Organizado, Bom em lógica, Comunica bem com gestores, Gosta de números e gráficos
+
+O QUE UM ANALISTA DE MIS FAZ?
+    1. Criação de relatórios gerenciais: Vendas, Financeiro, Performance de equipes, Indicadores (KPIs)
+    2. Análise de dados: Identificar tendências, Comparar resultados (mês vs mês, meta vs real), Apontar problemas e oportunidades
+    3. Automação de planilhas e dashboards: Excel avançado, Power BI / Tableau / Looker, Google Sheets
+    4. Integração de dados: Puxar dados de sistemas como CRM (Salesforce, HubSpot), ERP (SAP, TOTVS) e Bancos de dados (SQL).
+    As ferramentas mais usadas como Analista de MIS são:
+    1. Excel Avançado: PROCV / XLOOKUP, Tabelas dinâmicas, Power Query, VBA (às vezes)
+    2. BI (Business Intelligence): Power BI, Tableau
+    3. Banco de dados: SQL
+
+DIFERENÇA ENTRE CARGOS PARECIDOS
+    Analista de MIS -> Relatórios e gestão
+    Analista de Dados -> Estatística e modelos
+    BI Analyst -> Dashboards e visual
+    Business Analyst -> Regras de negócio
+
+COMO FUNCIONA NO MERCADO DE TRABALHO BRASILEIRO?
+    O cargo aparece muito bem em Bancos, Call centers, E-commerce, Empresas de logística e Fintechs.
+
+
+
+
+O QUE É WORKBOOK E WORKSHEET?
+    Workbook é o arquivo inteiro do Excel. É o que você salva no computador ou na nuvem. Workbook = o caderno inteiro.
+    Worksheet é cada aba dentro do arquivo. Worksheet = cada folha do caderno
+
+O QUE SÃO CELL E RANGES?
+    Uma cell é um único espaço da planilha, onde você digita dados, ela é identificada por letra da coluna e número da linha, por exemplo, A1, B5 e C10.
+    Um range é um conjunto de células, pode ser um bloco, uma linha inteira, uma coluna inteira ou células soltas.
+
+O SÃO MENUS E CONTEXT MENUS?
+    Menus são as barras principais de opções que ficam sempre visíveis no programa.
+    Context Menu é o menu que aparece quando você clica com o botão direito do mouse sobre algo.
+
+O QUE É UM OVERVIEW DE CÉLULAS?
+    Um Overview de Células no Excel é uma visão geral sobre como funcionam as células e como usá-las corretamente.
+
+O QUE É CELLS FREEZING/FREEZE PANES?
+    Cells Freezing é a função que mantém células visíveis enquanto você navega pela planilha. Significa congelar células, linhas ou colunas no Excel para que elas permaneçam visíveis enquanto você rola a planilha. Ela serve para não perder o título das colunas ou linhas em planilhas grandes, por exemplo, Você tem uma tabela com 1.000 linhas e nome, CPF, cargo e salário, ao rolar para baixo, você quer que o cabeçalho continue visível.
+    Para usar ela no Excel 365, clique em Exibir -> Congelar painéis, que te levará para 3 opções: congelar linha superior (Mantém sempre a primeira linha visível), Congelar Primeira Coluna (Mantém sempre a coluna A visível) e Congelar Painéis (Congela tudo acima e à esquerda da célula selecionada).
+    Você pode usá-las quando houver relatórios grandes, planilhas financeiras, controle de estoque ou bases de dados.
+
+
+
+INTRODUÇÃO AO MICROSOFT COPILOT
+    Microsoft Copilot é um assistente de inteligência artificial integrado aos produtos da Microsoft, como Word, Excel, PowerPoint, Outlook, Teams, Windows, Edge. Ele ajuda você a trabalhar mais rápido, com menos esforço, usando linguagem natural (como se estivesse falando com uma pessoa). Ou seja, Copilot é a IA da Microsoft que ajuda você a criar, analisar, resumir e automatizar tarefas.
+    No Word, Copilot cria textos automaticamente, reescreve e resume documentos, Corrige e melhora redação.
+    No Excel, ele analisa dados, criar fórmulas, gera gráficos e explicar números.
+    No Powerpoint, ele criar apresentações completas, gera slides a partir de um texto e sugere design.
+    No Outlook, ele resume e-mails longos, sugere respostas e escreve e-mails profissionais.
+    No Teams, ele resume reuniões, lista tarefas discutidas e gera atas automaticamente.
+    O Copilot usa IA generativa (GPT), dados do Microsoft 365 e contexto do seu trabalho, seja arquivos, e-mails ou reuniões.
+    Sua vantagem é o aumento de produtividade, redução de  tarefas repetitivas e ajuda na tomada de decisão.
+
+PASSOS BÁSICOS PARA ANALISAR UMA TABELA
+    1. Entender o contexto: pergunte o que esses dados representam, qual o objetivo da análise e qual pergunta quero responder.
+    2. Verificar a qualidade dos dados: antes de tudo se pergunte se há células vazias, dados duplicados ou valores fora do padrão.
+    3. Identifique colunas importantes, como data, categoria, valor, responsável e status.
+
+FERRAMENTAS PRINCIPAIS NO EXCEL 365
+    1. Filtros (dados->filtro): permite ver só um vendedor, um período específico ou um tipo de produto.
+    2. Ordenação: Classifica do maior para o menor, do recente para o mais antigo.
+    3. Tabelas Dinâmicas (Pivot Table): É a ferramenta mais poderosa de análise, por exemplo, "Total de vendas por mês e por vendedor".
+    4. Fórmulas de Análise: SOMA (Total), Média (Média), CONT.SE (Contagem Condicional), SOMASE (Soma Condicional), PROCV / XLOOKUP (Busca dados).
+
+TIPOS DE ANÁLISE COMUNS
+    1. Análise Descritiva: "O que aconteceu?", total vendido, média, maior valor.
+    2. Análise Comparativa: Compara mês atual vs anterior, meta vs resultado.
+    3. Análise de Tendência: Observa crescimento ou queda ao longo do tempo.
+
+ERROS COMUNS AO ANALISAR TABELAS
+    Olhar só totais ignorando o contexto, não filtrar dados, confiar sem validar e usar gráfico errado.
+
+
+
+
+
+INTRODUÇÃO AOS BANCOS DE DADOS RELACIONAIS
+    Os Bancos de Dados Relacionais (BDR) são sistemas usados para armazenar, organizar e recuperar dados de forma estruturada, baseados no modelo relacional, proposto por Edgar F. Codd em 1970. Nesse modelo, os dados são organizados em tabelas (também chamadas de relações), compostas por linhas (registros/tuplas) e colunas (atributos/campos).
+
+CONCEITOS BÁSICOS E ESTRUTURA DO BANCO DE DADOS RELACIONAL
+    Tabela: Estrutura principal que armazena os dados.
+    Registro (Linha): Representa uma entidade específica (ex: um cliente).
+    Campo (Coluna): Representa uma característica da entidade (ex: nome, idade)
+    Chave Primária (PK): Identifica unicamente cada registro da tabela.
+    Chave Estrangeira (FK): cria um relacionamento entre tabelas.
+    Relacionamento: Vínculo entre dados de tabelas diferentes.
+
+Linguagem SQL
+    A manipulação dos dados é feita por meio da SQL (Structured Query Language), que permite:
+    DDL: Criar e alterar estruturas (CREATE, ALTER, DROP);
+    DML: Manipular dados (INSERT, UPDATE, DELETE, SELECT);
+    DCL: Controle de acesso (GRANT, REVOKE).
+
+Principais Características
+    Integridade dos dados: Regras garantem consistência (ex: não existir cliente sem pedido válido)
+    Redução de redundância: Dados não precisam ser repetidos desnecessariamente.
+    Segurança: Controle de usuários e permissões
+    Escabiliade: suportam grandes volumes de dados.
+    Confiabilidade: Uso de transações (ACID)
+
+Exemplos de SGBDs relacionais
+    MySQL, PostgreSQL, Oracle Database, Microsoft SQL Server, Maria DB
+
+Onde são usados?
+    Banco de dados relacionais são amplamente utilizados em: sistemas bancários, e-commerces, sistemas acadêmicos, e-commerces, sistemas acadêmicos, ERPs e CRMs, aplicações web e corporativas.
+
+    Em resumo, os bancos de dados relacionais são a base da maioria dos sistemas de informação modernos, oferecendo uma forma segura, organizada e eficiente de trabalhar com dados estruturados.
+
+O QUE É UM BANCO DE DADOS?
+    Um banco de dados é um conjunto organizado de dados que são armazenados de forma estruturada para permitir acesso, consulta, atualiação e gerenciamento eficientes.
+    Em outras palavras, é como um arquivo digital inteligente, onde as informações não ficam apenas guardadas, mas podem ser facilmente pesquisadas e manipuladas por sistemas e usuários.
+
+Definição Simples
+    Banco de dados é um local onde os dados são armazenados forma organizada para serem usados posteriormente.
+
+Exemplo Prático
+    Imagina uma escola com alunos, professore, disciplinas e notas. Todas essas informações podem ser guardadas em um banco de dados, em vez de vários arquivos soltos.
+
+Principais Características
+    Um banco de dados permite:
+. Armazenar grandes volumes de dados
+. Consultar informações rapidamente
+. Atualizar dados sem perder consistência
+. Excluir dados quando necessário
+. Garantir segurança e controle do acesso
+
+Componentes Básicos
+. Dados: As informações propriamente ditas
+. SGBD (Sistema Gerenciador de Banco de Dados): Software que gerencia o banco (ex: MySQL, PostgreSQL, Oracle)
+. Usuários/Aplicações: Quem acessa e usa os dados
+
+Tipos de Bancos de Dados
+. Relacionais: Dados em tabelas (mais comuns)
+. Não Relacionais (NoSQL): Docmentos, grafos, chave-valor
+. Distribuídos: Dados espalhados em vários servidors
+. Em Memória: Dados mantidos na RAM
+
+Importância
+    Sem banco de dados, sistemas modernos como redes sociais, aplicativos bancários, lojas online e sistemas governamentais. Ou seja, banco de dados é a base de qualquer sistema que precisa guardar e trabalhar com informações de forma organizada e segura.
+
+TIPOS DE BANCO DE DADOS
+    Relacionais/SQL, Não Relacionais/NoSQL (Not OnlySQL), Orientado a Objetos, Hierárquico.
+    Os tipos de banco de dados podem ser classificados de acordo com o modelo de dados, a forma de armazenamento e o uso. A seguir estão os principais:
+
+1. Banco de Dados Relacionais (SQL)
+    São os mais tradicionais e utilizados. Ele é caracterizado pelo seus Dados organizados em tabelas, Uso da linguagem SQL, Forte consistência e integridade. Exemplos: MySQL, PostgreSQL, Oracle, SQL Server. Possue uso comum em sistemas financeiros, acadêmicos e empresariais.
+
+2. Bancos de Dados Não Relacionais (NoSQL)
+    Usados quando há grande volume e variedade de dados. Principais tipos de NoSQL:
+    A) Chave-Valor: estrutura simples (chave->valor), muito rápidos. Exemplos: Redis, DynamoDB
+    B) Documentos: Dados em formato JSON ou XML. Exemplos: MongoDB, CouchDB
+    C) Colunas (Colunar): Dados organizados por colunas, não por linhas. Exemplos: Neo4j, ArangoDB
+
+3. Bancos de Dados Distribuídos
+   Caracterizado pelo Dados armazenados em vários servidores, Alta disponibilidade e tolerância a falhas. Exemplos: Google Spanner, Amazon Aurora.
+
+4. Bancos de Dados em Memória
+    Caracterizado pelos Dados armazenados na RAM e altíssima performance. Exemplos: Redis, Memcached
+
+5. Bancos de Dados Orientados a Objetos
+    Caracterizado por armazenas dados como objetos (semelhantes à POO). Exemplos: db4o, ObjectDB
+
+6. Bancos de Dados Hierárquicos
+    Estrutura em árvore (pai-filho). Exemplo clássico: IBM IMS
+
+7. Banco de Dados de Rede
+    Caracterizado por estrutura em grafo (mais flexível que hierárquico). Exemplo: IDMS
+
+8. Bancos de Dados Analíticos (Data Warehouse)
+    Caracterizado por serem focados em análise e relatórios, usados em BI (Business Intelligence). Exemplos: Snowflake, BigQuery, Redshift.
+
+Resumo (Tipo, Estrutura, Melhor para...)
+Relacional - Tabelas - Sistemas Tradicionais
+NoSQL - Variada Big Data - Web
+Distribuído - Vários nós - Alta Disponibilidade
+Em memória - RAM - Sistemas em tempo real
+Data Warehouse - Colunar - Análise e BI
+
+O QUE É SGBD?
+    Um SGBD (Sistema Gerenciador de Banco de Dados) é um software responsável por criar, gerenciar, organizar e controlar o acesso a um banco de dados. Ele funciona como um intermediário entre os usuários/aplicações e os dados armazenados. Definição simples: SGBD é o programa que permite trabalhar com um banco de dados de forma segura e organizada
+
+Para que serve um SGBD?
+    Um SGBD permite criar bancos e tabelas; Inserir, alterar e excluir dados; Consultar informações; Controlar usuários e permissões; Garantir integridade e segurança.
+
+Exemplo Prático
+    Sem SGBD, os dados seriam apenas arquivos soltos no computador. Com SGBD, você usa um software como MySQL ou PostgreSQL para: armazenar os dados, pesquisar rapidamente e garantir que ninguém apague informações importantes.
+
+Principais SGBDs
+    Relacionais: MySQL, PostgreSQL, Oracle, SQL Server, MariaDB.
+    Não Relacionais: MongoDB, Redis, Cassandra
+
+Principais funções de um SGBD
+    1. Definição de dados: Criação da estrutura do banco (tabelas, campos).
+    2. Manipulação de dados: Inserir, consultar, atualizar e excluir dados.
+    3. Controle de acesso: Gerenciamento de usuários e senhas.
+    4. Controle de Integridade: Evita dados inconsistentes
+    5. Controle de Transações: Garante propriedades ACID (Atomicidade, Consistência, Isolamento, Durabilidade).
+
+    Em resumo, o banco de dados é onde os dados ficam; o SGBD é o sistema que permite usar esses dados de forma correta, segura e eficiente.
+
+FUNCIONALIDADES BÁSICAS DO SGBD (CRUD)
+    C (Create), R (Read), U (Update), D (Delete).
+
+ESTRUTURA DE UM BD RELACIONAL
+*** check /Downloads
+
+CARACTERÍSTICAS DE SGBD/RDBMS (Banco de Dados Relacionais)
+    
+    Relacionamento entre tabelas, Linguagem de Consulta Estruturada (SQL), Integridade referencial, Normalização de dados, Segurança, Flexibilidade e extensibilidade, Suporte a transações ACID (Atomicidade, Consistencia, Isolamento e Durabilidade).
+
+INTRODUÇÃO E CONCEITOS BÁSICOS DE SQL
+    SQL (Structure Query Language)
+
+ORGANIZAÇÃO DA SQL
+    DQL - Linguagem de Consulta de Dados (SELECT;)
+    DML - Linguagem de Manipulação de Dados (INSERT, UPDATE E DELETE;)
+    DDL - Linguagem de Definição de Dados (CREATE, ALTER E DROP;)
+    DCL - Linguagem de Controle de Dados (GRANT, REVOKE)
+    DTL - Linguagem de Transação de Dados (BEGIN, COMMIT E ROLLBACK)
+
+SINTAXE BASÍCA: NOMENCLATURA
+    Os nomes devem começar com uma letra ou com um caractere sublinhado (_).
+    Os nomes podem conter letras, números e caracteres de sublinhado (_).
+    Sensibilidade a maiúsculas e minúsculas.
+
+MER E DER
+    O Modelo Entidade-Relacionamento (MER) é representado através de diagramas chamados Diagramas Entidade-Relacionamento (DER)
+
+ENTIDADES
+    As entidades são nomeadas com substantivos concretos ou abstratos que representem de form clara sua função dentro do domínio.
+
+ATRIBUTOS
+    Os atributos são as características ou propriedades das entidades. Eles descrevem informações especfícicas sobre uma entidade.
+
+FERRAMENTA CREATELY
+
+RELACIONAMENTOS
+    Os relacionamentos representam as associações entre entidades.
+
+CARDINALIDADE
+    Relacionamento 1..1 (um para um)
+    Relacionamento 1..nou 1..* (um para muitos)
+    Relacionamento n..n ou *..* (muitos para muitos)
+
+QUICKDATABASEDIAGRAMS
+****check /Downloads 4
+
+CONFIGURAÇÃO DO AMBIENTE
+BANCO DE DADOS
+O QUE É E COMO FUNCIONA https://clients.cloudclusters.io/?
+
+TABELAS, COLUNAS E REGISTROS
+    Tabelas são usadas para armazenar dados de forma organizada, cada tabela em um banco de dados relacional tem um nome único e é dividida em colunas e linhas.
+    Uma coluna é uma estrutura dentro de uma tabela que representa um atributo específico dos dados armazenados, cada coluna tem um nome único e um tipo de dados associado que define o tipo de informação que poe ser armazenado nela, como números, textos, datas, etc.
+
+COMANDO: CREATE TABLE
+CREATE TABLE {{nome}}
+    {{{coluna}} {{tipo}} {{opções}} COMMENT {{´COMENTARIO´}}};
+
+TIPOS DE DADOS
+    Os dados podem variar muito entre os diversos SGBD, os mais comuns são: Inteiro (Integer), Decimal/Numérico (Decimal/Numeric), Caractere/Varchar (Character/Varchar), Data/Hora (Date/Time), Booleano (Boolean), Texto longo (Text).
+
+Comando: CREATE TABLE - Opções
+    Restrições de valor (NOT NULL, UNIQUE, DEFAULT), Chaves primárias e estrangeiras, Auto Incremento.
+
+***check /Downloads 5
+
+Comando: INSERT
+INSERT INOT
+{{ nome-tabela }}
+([ coluna1, coluna2, ...]) *** você pode ocultar as colunas
+VALUES
+ ([ valor-coluna1, valor-coluna2, ...])
+
+***check /Downloads 6
+
+Comando: SELECT
+SELECT {{ lista_colunas}}
+FROM tabela;
+
+Onde * retorna todas as colunas
+
+Comando: SELECT - Operadores
